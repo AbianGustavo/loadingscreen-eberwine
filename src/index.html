@@ -5,8 +5,9 @@
     <title>Eberwine Powered By Abián</title>
     <style>
         body {
+            background: url(https://i.etsystatic.com/40389288/r/il/6c0db5/4648701720/il_794xN.4648701720_a315.jpg);
+            background-size: cover;
             color: #ecf0f1;
-            text-align: center;
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
@@ -16,15 +17,7 @@
             height: 100vh;
             overflow: hidden;
         }
-        video {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            min-width: 100%;
-            min-height: 100%;
-            z-index: -100;
-            transform: translate(-50%, -50%);
-        }
+    
         .container {
             text-align: center;
             z-index: 1;
@@ -48,16 +41,31 @@
         .visible {
             opacity: 1;
         }
+
+        .discord {
+            position: absolute;
+            justify-items: left;
+            bottom: 10px;
+            left: 35px;
+            font-weight: bold;
+        }
+        .discord img {
+            margin-bottom: -7px;
+            padding-right: 0.5em;
+            
+        }
+
     </style>
 </head>
 <body>
     <div class="container">
-        <video autoplay muted loop>
-            <source src="./eberwine.mp4" type="video/mp4">
-        </video>
         <img src="https://i.imgur.com/6W5bw2Z.png" width="500"> 
         <hr>
         <p id="rotate-text" class="hidden"></p>
+    </div>
+    <div class="discord">
+        <img src="https://i.imgur.com/IyomRR5.png" width="25">eberwinerp.com
+
     </div>
 
     <script>
@@ -95,4 +103,3 @@
     </script>
 </body>
 </html>
-
